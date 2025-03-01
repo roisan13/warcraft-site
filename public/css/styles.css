@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Morpheus;
+    src: url(../sprites/MORPHEUS.TTF);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-color: black;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    font-family: Morpheus;
+    top: 30%;
+    left: 5%;
+    font-size: 5em;
+    width: auto;
+    height: auto;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.overlaytext {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 42%;
+    left: 5%;
+    font-size: 1.75em;
+    width: 50%;
+    height: 30%;
+    color: #fff;
+}
+
+nav {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    background-color: rgba(56, 56, 56, 0.75);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 12%;
+    transition: all 500ms ease-out;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 0px;
+}
+
+section {
+    margin-bottom: 0px;
+    padding: 1em;
+}
+
+section h2 {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+
+section p {
+    margin-left: 1em;
+    width: 50%;
+    margin-bottom: 0.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+figure {
+    height: 100%;
+    width: 50%;
+}
+
+#welcome {
+    background-image: url('../sprites/cata.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: inline-block;
+}
+
+#wowlogo {
+    width: 25%;
+    height: 25%;
+    position: relative;
+    left: 10%;
+}
+
+
+#pickaside {
+    background-image: url('../sprites/ragnaros.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+
+}
+
+#races {
+    background-image: url('../sprites/sylvanas.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+#map {
+    background-image: url('../sprites/mapbg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+#version {
+    width: 100%;
+    height: auto;
+    background-image: url('../sprites/maptexture.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+#version img { 
+    position: relative;
+    top: -100%;
+    left: 80%;
+    animation-name: flying;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+
+@keyframes shake{
+    0% { transform: scale(1); transform: rotate(0deg);}
+    25% { transform: scale(1.1); transform: rotate(10deg);}
+    50% { transform: scale(0.9); transform:rotate(-10deg);}
+    75% { transform: scale(1.1); transform:rotate(10deg);}
+    100% { transform: scale(1); transform:rotate(0deg);}
+  }
+
+
+#worldsoul-saga{
+    background-color:#181717;
+    color: white;
+}
+
+#factions {
+    padding: 0;
+    flex: 1;
+    height: 30em;
+    width: 100%;
+    display: flex;
+}
+
+#expansions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.expansion-img{
+    max-height: 70%;
+    transition: all 1s ease-out;
+}
+
+.expansion-img:hover{
+    transform: scale(1.25);
+}
+
+
+#horde {
+    flex: 1;
+    height: 100%;
+    background-color: rgb(209, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em;
+    overflow: hidden;
+    color: rgb(209, 14, 14);
+    transition: all 1s ease-out;
+}
+
+#alliance {
+    flex: 1;
+    height: 100%;
+    background-color: rgb(42, 42, 184);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1em;
+    overflow: hidden;
+    color: rgb(42, 42, 184);
+    transition: all 1s ease-out;
+}
+
+#horde p {
+    margin: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+#alliance p {
+    margin: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+
+#horde:hover {
+    flex: 6;
+    color: black;
+}
+
+#alliance:hover {
+    flex: 6;
+    color:black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+button{
+    background-color: transparent;
+    padding: 0px;
+    margin-bottom: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 200%;
+}
+
+.dropbtn {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.912);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.6);
+    
+}
+.dropdown-content-races {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.912);
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+    column-count: 2;
+    column-gap: 1.5em;
+  }
+
+.dropdown-content a {
+    color: #333;
+    padding: 0.5em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #585858;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 2;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #585858;
+}
+
+.btn {
+    display: inline-block;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    background-color: rgb(121, 11, 11);
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 0.5em;
+}
+
+.btn:hover {
+    background-color: rgb(66, 10, 10);
+}
+
+footer {
+    background-color: rgba(56, 56, 56, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+    #bg-video{
+        visibility: hidden;
+    }
+
+    .video-container{
+        background-image: url(../sprites/lichking.png);
+        background-position-x: 50%;
+        text-align: center;
+        font-size: 1em;
+        overflow: hidden;
+    }
+
+    section{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .overlaytext{
+        padding: 1.2em;
+        width: 100%;
+        text-align: center;
+        margin-top: 5em;
+        font-size: 1em;
+        left: 0%;
+    }
+
+    .expansion-img{
+        width: auto;
+        height: 8em;
+    }
+
+    #worldsoul-saga{
+        text-align: right;
+        height: 20em;
+    }
+
+    #worldsoul-saga p{
+        text-align: right;
+        justify-content: end;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    #version{
+        text-align: center;
+        height: auto;
+        font-size: 1em;
+    }
+
+    #version p{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+
+    #horde:hover {
+        flex: 6;
+    }
+    
+    #alliance:hover {
+        flex: 6;
+    }
+  }

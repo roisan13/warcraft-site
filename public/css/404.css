@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url("../sprites/404.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    margin-top: 10em;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+main{
+    justify-content: center;
+}
+h2 {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+.btn {
+    width: 15em;
+    margin-left: 35em;
+    background-color: rgb(89, 47, 241);
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 0.5em;   
+    font-size: 1.5em;
+}
+
+.btn:hover {
+    background-color: rgb(55, 29, 126);
+}
+

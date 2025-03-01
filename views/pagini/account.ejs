@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="css/account.css">
+    <script type="text/javascript" src="scripts/account.js"></script>
+</head>
+
+<body>
+  
+    <main>
+        <nav>
+            <ul>
+                <li><a href="https://www.blizzard.com/en-us/">Blizzard</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="news">News</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Classes</a>
+                        <div class="dropdown-content">
+                            <a href="warrior">Warrior</a>
+                            <a href="#">Mage</a>
+                            <a href="#">Paladin</a>
+                            <a href="#">Priest</a>
+                            <a href="#">Hunter</a>
+                            <a href="#">Rogue</a>
+                            <a href="#">Shaman</a>
+                            <a href="#">Warlock</a>
+                            <a href="#">Monk</a>
+                            <a href="#">Druid</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Races</a>
+                        <div class="dropdown-content">
+                            <a href="human">Human</a>
+                            <a href="#">Dwarf</a>
+                            <a href="#">Night Elf</a>
+                            <a href="#">Gnome</a>
+                            <a href="#">Orc</a>
+                            <a href="#">Undead</a>
+                            <a href="#">Tauren</a>
+                            <a href="#">Troll</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="ticket">Ticket</a></li>
+                <li><a href="account" >
+                    <% if (user == null) { %>
+                        Account
+                    <% } else { %>
+                        <%= user %>
+                    <% } %>
+                </a></li>
+                <a class="btn" href="logout">Logout</a>
+            </ul>
+            
+        </nav>
+        <h1>Greetings, <%= user %> !</h1>
+        <h1>Manage your quest log, inventory tracker, and dungeons and raids progression here.</h1>
+        <div id="user-data" data-user="<%= user %>"></div>
+        <div class="container">
+            <div id="questContainer">
+                <h2>Quest Log</h2>
+                <ul class="localStorageUL" id="questList"></ul>
+                <div class="addToStorage">
+                    <input type="text" id="newQuest" placeholder="New Quest">
+                    <div class="btn" id="addQuest">Add Quest</div>
+                </div>
+                
+            </div>
+    
+            <div id="inventoryContainer">
+                <h2>Inventory Tracker</h2>
+                <ul class="localStorageUL" id="inventoryList"></ul>
+                <div class="addToStorage">
+                    <input type="text" id="newItem" placeholder="New Inventory Item">
+                    <div class="btn" id="addItem">Add Item</div>
+                </div>
+
+            </div>
+    
+            <div id="progressionContainer">
+                <h2>Dungeons and Raids Completed</h2>
+                <ul class="localStorageUL" id="progressionList"></ul>
+                <div class="addToStorage">
+                    <input type="text" id="newProgress" placeholder="New Dungeon/Raid">
+                    <div class="btn" id="addProgress">Add Progress</div>
+                </div>
+            </div>
+        </div>
+
+          
+
+    </main>
+
+</body>
+
+</html>

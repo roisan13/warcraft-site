@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Warcraft</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="text/javascript" src="scripts/index.js"></script>
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/trailerscaled.mp4" type="video/mp4">
+            Error displaying video.
+        </video>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.blizzard.com/en-us/">Blizzard</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="news">News</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Classes</a>
+                        <div class="dropdown-content">
+                            <a href="warrior">Warrior</a>
+                            <a href="#">Mage</a>
+                            <a href="#">Paladin</a>
+                            <a href="#">Priest</a>
+                            <a href="#">Hunter</a>
+                            <a href="#">Rogue</a>
+                            <a href="#">Shaman</a>
+                            <a href="#">Warlock</a>
+                            <a href="#">Monk</a>
+                            <a href="#">Druid</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Races</a>
+                        <div class="dropdown-content">
+                            <a href="human">Human</a>
+                            <a href="#">Dwarf</a>
+                            <a href="#">Night Elf</a>
+                            <a href="#">Gnome</a>
+                            <a href="#">Orc</a>
+                            <a href="#">Undead</a>
+                            <a href="#">Tauren</a>
+                            <a href="#">Troll</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="ticket">Ticket</a></li>
+                <li><a href="account" >
+                    <% if (user == null) { %>
+                        Account
+                    <% } else { %>
+                        <%= user %>
+                    <% } %>
+                </a></li>
+            </ul>
+        </nav>
+
+        <h1 class="overlay">World of Warcraft</h1>
+        <p class="overlaytext">Explore three thrilling modes in World of Warcraft: Classic, Retail, and the innovative
+            Plunderstorm. Journey
+            through the original Azeroth, embrace constant updates, or dive into the fresh challenges of Plunderstorm.
+            With WoW, adventure awaits at every turn.</p>
+
+    </div>
+
+
+    <main>
+        <section id="welcome">
+            <figure>
+                <img id="wowlogo" src="sprites/wowlogo.png" alt="WoW">
+            </figure>
+
+            <h2>Welcome to Azeroth!</h2>
+            <p>In World of Warcraft, you play a powerful hero who fights towering monsters, delves perilous dungeons,
+                defends the world of Azeroth against all threats, and much more. You can try WoW FREE up to level 20*.
+            </p>
+            <a href="#" class="btn">Get Started</a>
+            
+        </section>
+
+        <section id="worldsoul-saga">
+            <h2>The Worldsoul Saga</h2>
+            <p> A grand new adventure, 20 years in the making. </p>
+            <figure id="expansions">
+                <img class="expansion-img" id="warwithin" src="sprites/warwithin.png" alt="WoW: The War Within">
+                <img class="expansion-img" id="midnight" src="sprites/midnight.webp" alt="WoW: Midnight">
+                <img class="expansion-img" id="lasttitan" src="sprites/lasttitan.webp" alt="WoW: The Last Titan">
+            </figure>
+        </section>
+
+        <section id="version">
+            <h2>Choose the version that suits you!</h2>
+            <p> Looking to do some mythic dungeons and raiding? Maybe you are just nostalgic for the golden days of
+                World of Warcraft? Either way, you can fulfill your adventure, just as you like it.</p>
+            <a href="https://shop.battle.net/product/world-of-warcraft-subscription?utm_source=worldofwarcraft.com&utm_campaign=bop-wow-global-subscription&utm_medium=internal&utm_content=site-nav"
+                class="btn">SUBSCRIBE NOW</a>
+            <a href="https://worldofwarcraft.blizzard.com/en-us/news/24029408/world-of-warcraft-classic-season-of-discovery-is-now-live"
+                class="btn">LEARN MORE</a>
+            <!-- <img src="sprites/zeppelin.webp"> -->
+        </section>
+
+        <section id="map">
+            <h2>A vast world of magic and limitless adventure.</h2>
+            <p>World of Wacraft has many worlds to discover, each one unique, captivating and charming. But perhaps the greatest one of them all is Azeroth, divided into several continents,
+                populated by numerous races, each of them having immense capital cities. Azeroth is rich with conflict, magic and ancient secrets. Explore it yourself right now!
+            </p>
+            <a href="/map"
+                class="btn">GO TO AZEROTH</a>
+
+        </section>
+
+        <section id="pickaside">
+            <h2>Who will you fight for?</h2>
+            <p>Be the hero you want to be. Will you fight as a hulking Tauren Warrior? Or perhaps an inventive Gnome
+                Warlock? The choice is yours—but first, you must pick a side.</p>
+        </section>
+
+        <div id="factions">
+            <div id="horde">
+                <p>The Horde, one of the two major factions in the World of Warcraft universe, is a diverse coalition of
+                    races bound by a common goal: survival and dominance. Comprised of proud and resilient races such as
+                    the brutish Orcs, noble Tauren, cunning Trolls, shrewd Forsaken, enigmatic Blood Elves, and
+                    relentless Goblins, the Horde values strength, honor, and unity above all else. Originating from the
+                    harsh lands of Draenor, they seek to carve out their destiny in the tumultuous world of Azeroth,
+                    fiercely defending their territories while forging new alliances. With their steadfast determination
+                    and unwavering loyalty, the Horde stands as a formidable force, ready to confront any challenge that
+                    stands in their path.</p>
+
+                <img src="sprites/horde.png" alt="Horde">
+            </div>
+
+
+            <div id="alliance">
+                <img src="sprites/alliance.png" alt="Alliance">
+                <p>The Alliance, a powerful coalition of races in the World of Warcraft realm, embodies unity,
+                    diversity, and valor. Bringing together noble and diverse civilizations, the Alliance is an alliance
+                    of humans, stalwart dwarves, enigmatic night elves, resilient gnomes, and righteous draenei. Formed
+                    in the wake of great conflicts, including the First and Second Wars, the Alliance stands as a beacon
+                    of hope and civilization against the chaos and darkness that threaten Azeroth. With a dedication to
+                    justice, diplomacy, and the protection of all free peoples, the Alliance tirelessly defends its
+                    realms, seeks peaceful coexistence, and strives for the greater good of all.</p>
+            </div>
+        </div>
+
+        <section id="races">
+            <h2>Create your legend</h2>
+            <p> Azeroth is home to a large variety of races, some native to its lands and some hailing from other
+                realms. Whether as a stalwart defender of the Alliance or a fierce guardian of the Horde, deciding which
+                race to play will define who you'll fight for in this neverending war. Where do your loyalties lie?</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 World of Warcraft. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

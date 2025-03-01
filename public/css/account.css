@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url(../sprites/darkportal.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+nav {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    background-color: rgba(56, 56, 56, 0.75);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 12%;
+    transition: all 500ms ease-out;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+main {
+    padding: 1.5em;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#questContainer, #inventoryContainer, #progressionContainer {
+    min-height: 40em;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.addToStorage{
+    width: 15em;
+    height: 10em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.localStorageUL {
+    padding: 0;
+}
+.localStorageUL li{
+    color: white;
+    padding: 0.7em;
+    background-color: black;
+    margin: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 200%;
+}
+
+.dropbtn {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.912);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.6);
+
+}
+
+.dropdown-content-races {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.912);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    column-count: 2;
+    column-gap: 1.5em;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 1em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #585858;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 2;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #585858;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(121, 11, 11);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;   
+}
+
+.btn:hover {
+    background-color: rgb(66, 10, 10);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}

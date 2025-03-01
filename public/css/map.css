@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../sprites/warbg.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Morpheus;
+    src: url(../sprites/MORPHEUS.TTF);
+}
+
+nav {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    background-color: rgba(56, 56, 56, 0.75);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 12%;
+    transition: all 500ms ease-out;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+main {
+    padding: 1.5em;
+}
+
+#mapContainer {
+    margin: auto;
+    width: 80vw;
+    height: 100vh;
+    position: relative;
+    border: 2px solid #fff;
+    overflow: hidden;
+    font-size: 3em;
+    color: white;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h2{
+    font-family: Morpheus;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+
+.switchContainer{
+   width: 5em;
+   margin: auto;
+   padding: 1em;
+   font-size: 2em;
+   color: white;;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: auto;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3a3a3a;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #3a3a3a;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 200%;
+}
+
+.dropbtn {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.912);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.6);
+
+}
+
+.dropdown-content-races {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.912);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    column-count: 2;
+    column-gap: 1.5em;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 1em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #585858;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 2;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #585858;
+}
+
+.btn {
+    display: inline-block;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    background-color: rgb(121, 11, 11);
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 0.5em;   
+}
+
+.btn:hover {
+    background-color: rgb(66, 10, 10);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}

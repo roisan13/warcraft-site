@@ -1,0 +1,26 @@
+{"news":[  
+    {"title":"THE WAR WITHIN BETA TEST BEGINS JUNE 5!",
+     "image":"sprites/news0.jpg",
+     "article":"The World of Warcraft: The War Within beta test begins June 5! Over the course of the test, we’ll be inviting community veterans, press, fansites, friends, and family to check out the upcoming expansion and give us feedback. Players who purchase or who upgrade to the Epic Edition of The War Within will also gain immediate access to the beta and gain a minimum three-day early access to the expansion. Players selected to participate will receive an email invitation directing them to download the game client directly from the Battle.net desktop app. Players who purchase the Epic Edition may also receive email notifications. As always, please be aware of phishing attempts—if you’re unsure whether your invitation is legitimate, please log in to your Battle.net account to verify that there is a The War Within beta license attached (under Your Game Accounts)."},
+     
+     {"title":"GRAB THE CRUSTY CRAWLER MOUNT AND CLAMBER ABOARD",
+     "image":"sprites/news1.webp",
+     "article": "Make waves and get cracking! Help this crabulous crustacean claw out of nautical nonsense and shellebrate life on land—now available through the in-game shop. Add the Crusty Crawler to your collection before it skitters back to the deep blue sea on June 30, 2024. This offer requires a World of Warcraft® subscription or Game Time and is not available in World of Warcraft Classic progression games."},
+
+     {"title": "CATACLYSM CLASSIC RAID DUNGEONS NOW LIVE!",
+     "image":"sprites/news2.jpg",
+     "article": "Take your new adventures into three new raid dungeons: The Bastion of Twilight, Blackwing Descent, and Throne of the Four Winds. The Bastion of Twilight stands as a dark symbol of the Old Gods’ burgeoning power on Azeroth. Various branches of the Twilight’s Hammer dwell deep beneath the towering form— considered the cult’s foremost command center— along with their twisted leader, Cho’gall. There he, and his servants, conspire to bring the Old Gods’ apocalyptic visions to fruition by bleeding Azeroth of all sanity, hope, and life. Nefarian and his warped attempts to create a new breed of dragon were thought to be defeated after his death in Blackwing Lair. Yet tales have emerged that his father, Deathwing, has reanimated Nefarian and set him to work in Blackwing Descent. The gruesome experiments being conducted there are feared to be on a level of wickedness far surpassing Nefarian’s previous crimes against nature."},
+
+     {"title":"THIS WEEK IN WOW: MAY 24, 2024",
+     "image":"sprites/news3.webp",
+     "article": "Engage in an all new PvP season beginning with weekly resets. Gather your team to take on the challenge of Rated Arenas and Rated Battlegrounds and earn Conquest points to spend on new and more powerful PvP gear.Since leaving the realms of Death, Anduin Wrynn has only sought to keep his hands busy. Plagued by night terrors and grisly flashbacks, the young king finally finds the isolation he seeks in Stormsong Valley, milling flour for a local village. But while Anduin may be able to hide his identity, he cannot escape who he is or the stuff he is made from."},
+
+     {"title":"EXPLORE NEW HEROES IN TWIST!",
+     "image":"sprites/news4.webp",
+     "article": "Twist returns soon for a massive new season: Whizbang’s Heroes! Jump right into the fun with one of 19 new Heroes, each with a pre-made deck and a unique Hero Power and Passive effect. It all starts when the next season begins on June 1!In Whizbang’s Heroes, simply pick your Hero and play! Each Hero has three main characteristics: a pre-built deck, a unique Hero Power, and a corresponding Passive effect. Heroes can also have different life totals. The pre-built Hero decks don’t have to follow the normal deck construction rules of Hearthstone: some decks are different sizes, most decks feature a mix of cards across different classes, and many decks have no duplicates, for more varied play. Each Hero’s Hero Power and Passive effect are designed to match that character’s flavor and deck mechanics. Our goal is for each Hero to feel like a new class."},
+
+     {"title":"HOTFIXES: MAY 30, 2024",
+     "image":"sprites/news5.avif",
+     "article": "Here you'll find a list of hotfixes that address various issues related to World of Warcraft: Dragonflight, Cataclysm Classic, Season of Discovery, and WoW Classic. Some of the hotfixes below take effect the moment they were implemented, while others may require scheduled realm restarts to go into effect. Please keep in mind that some issues cannot be addressed without a client-side patch update. This list will be updated as additional hotfixes are applied. Righteous Frenzy can no longer be cast on non-party members. In the Throne of Thunder Dark Animus encounter, the increased damage and attack speed by Anima Golems casting Acceleration Link has been reduced to 100% per stack (was 250%). The Greater Inscription shoulder enchants available at exalted with Therazane are now Bind-to-Account."}
+
+]}  

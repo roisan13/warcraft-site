@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="css/ticket.css">
+    <script type="text/javascript" src="scripts/ticket.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="https://www.blizzard.com/en-us/">Blizzard</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="news">News</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Classes</a>
+                        <div class="dropdown-content">
+                            <a href="warrior">Warrior</a>
+                            <a href="#">Mage</a>
+                            <a href="#">Paladin</a>
+                            <a href="#">Priest</a>
+                            <a href="#">Hunter</a>
+                            <a href="#">Rogue</a>
+                            <a href="#">Shaman</a>
+                            <a href="#">Warlock</a>
+                            <a href="#">Monk</a>
+                            <a href="#">Druid</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Races</a>
+                        <div class="dropdown-content">
+                            <a href="human">Human</a>
+                            <a href="#">Dwarf</a>
+                            <a href="#">Night Elf</a>
+                            <a href="#">Gnome</a>
+                            <a href="#">Orc</a>
+                            <a href="#">Undead</a>
+                            <a href="#">Tauren</a>
+                            <a href="#">Troll</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="ticket">Ticket</a></li>
+                <li><a href="account" >
+                    <% if (user == null) { %>
+                        Account
+                    <% } else { %>
+                        <%= user %>
+                    <% } %>
+                </a></li>
+            </ul>
+        </nav>
+
+        <div class = "ticketContainer">
+
+            <h2>Ticket to a GameMaster</h2>
+
+            <form action="/ticket" method="post" class="ticket">
+                <h4>Fill in the data:</h4>
+                <ul>
+                    <li>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" pattern=".{3,30}" name="name" required/>
+                    </li>
+                    <li>
+                        <label for="tag">BattleTag: </label>
+                        <input type="text" id="tag" pattern="^[A-Z]{3,15}#[0-9]{4}$" placeholder="BTTLTAG#1234" name="battletag" required />
+                    </li>      
+                    <li>
+                        <label for="email">Email:<span aria-label="required">*</span> </label>
+                        <input type="email" id="email" placeholder="user@blizz.net" name="email"/>
+                    </li>
+                    <li>
+                        <label for="char_name">Character name: </span></label>
+                        <input type="text" id="char_name" pattern="[A-Za-z]{3,20}" name="char_name"/>
+                    </li>
+                    <li>
+                        <label for="version">Version:</label>
+                        <input type="radio" name="version" id="vers_type_1" value="Retail">
+                        <label for="vers_type_1">Retail</label>
+                        <input type="radio" name="version" id="vers_type_2" value="Classic">
+                        <label for="vers_type_2">Classic</label>
+                        </li>
+                    
+                    <li>
+                        <label for="server">Server:</label>
+                        <input list="server-selector" id="server" name="race"/>
+            
+                        <datalist id="server-selector">
+                            <option value="US 1"></option>
+                            <option value="US 2"></option>
+                            <option value="EU 1"></option>
+                            <option value="EU 2"></option>
+                            <option value="PTR 1"></option>
+                            <option value="PTR 2"></option>
+                            <option value="OCEANIA"></option>
+                            <option value="ASIA 1"></option>
+                            <option value="ASIA 2"></option>
+                        </datalist>
+                    </li>
+
+                    <li id = "importanceLI">
+                        <label for="importance">Importance: </span></label>
+                        <input type="range" name="importance" min="0" max="1000" step="10" value="500" id="myRange" required/>
+                        <div id="rangeOutput"></div>
+                    </li>
+                    <li>
+                    <label for="adresa"> Problem: </label>
+                    <textarea id="adresa" name="problemadesc" rows="8" cols="50" required></textarea>
+                    </li>
+                    
+                
+                    
+                </ul>
+      
+                <div class="subtext">
+                    *Please be sincere about the importance of your ticket. Insignificant tickets marked as high importance will be penalised.
+                </div>
+      
+                <div class="submitButton">
+                    <button type="submit">Send ticket</button>
+                 </div>
+            </form>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

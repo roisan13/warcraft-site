@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Class Details - World of Warcraft</title>
+    <link rel="stylesheet" href="css/human.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="https://www.blizzard.com/en-us/">Blizzard</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="news">News</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Classes</a>
+                        <div class="dropdown-content">
+                            <a href="warrior">Warrior</a>
+                            <a href="#">Mage</a>
+                            <a href="#">Paladin</a>
+                            <a href="#">Priest</a>
+                            <a href="#">Hunter</a>
+                            <a href="#">Rogue</a>
+                            <a href="#">Shaman</a>
+                            <a href="#">Warlock</a>
+                            <a href="#">Monk</a>
+                            <a href="#">Druid</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Races</a>
+                        <div class="dropdown-content">
+                            <a href="#">Human</a>
+                            <a href="#">Dwarf</a>
+                            <a href="#">Night Elf</a>
+                            <a href="#">Gnome</a>
+                            <a href="#">Orc</a>
+                            <a href="#">Undead</a>
+                            <a href="#">Tauren</a>
+                            <a href="#">Troll</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="ticket">Ticket</a></li>
+                <li><a href="account" >
+                    <% if (user == null) { %>
+                        Account
+                    <% } else { %>
+                        <%= user %>
+                    <% } %>
+                </a></li>
+            </ul>
+        </nav>
+
+        <div class="header-image">
+            <h1>HUMANS</h1>
+        </div>
+
+        <div id="human-desc">
+            <img id="human-logo" src="sprites/lordaeron.webp" alt="Kingdom of Lordaeron">
+            <p>The human kingdom of Stormwind forms the backbone of the Alliance. Stormwind's willingness to work with
+                others to find diplomatic solutions stands out as one of its true strengths. Its citizens hold fast to
+                the principles of honor and justice as they defend their settlements, and the Alliance, against any
+                aggressors.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 World of Warcraft. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

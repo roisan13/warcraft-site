@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Class Details - World of Warcraft</title>
+    <link rel="stylesheet" href="css/warrior.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="https://www.blizzard.com/en-us/">Blizzard</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="news">News</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Classes</a>
+                        <div class="dropdown-content">
+                            <a href="warrior">Warrior</a>
+                            <a href="#">Mage</a>
+                            <a href="#">Paladin</a>
+                            <a href="#">Priest</a>
+                            <a href="#">Hunter</a>
+                            <a href="#">Rogue</a>
+                            <a href="#">Shaman</a>
+                            <a href="#">Warlock</a>
+                            <a href="#">Monk</a>
+                            <a href="#">Druid</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Races</a>
+                        <div class="dropdown-content">
+                            <a href="human">Human</a>
+                            <a href="#">Dwarf</a>
+                            <a href="#">Night Elf</a>
+                            <a href="#">Gnome</a>
+                            <a href="#">Orc</a>
+                            <a href="#">Undead</a>
+                            <a href="#">Tauren</a>
+                            <a href="#">Troll</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="ticket">Ticket</a></li>
+                <li><a href="account" >
+                    <% if (user == null) { %>
+                        Account
+                    <% } else { %>
+                        <%= user %>
+                    <% } %>
+                </a></li>
+            </ul>
+        </nav>
+
+        <div class="loop-img-container">
+            <section>
+                <h2>Lords of War</h2>
+                <p>In the vast lore of Warcraft, the Warrior stands as a formidable symbol of strength and valor,
+                    embodying
+                    the essence of battle and honor. Honed through relentless training and unwavering determination,
+                    Warriors are skilled combatants, adept in wielding various weapons and donning heavy armor. Whether
+                    leading the charge into battle or defending their homeland, Warriors inspire allies with their
+                    courage
+                    and strike fear into the hearts of their foes. Driven by duty and loyalty, they confront any threat
+                    with
+                    unyielding resolve, standing as guardians of peace and defenders of justice. Even in times of peace,
+                    the
+                    Warrior's spirit remains unbroken, ever-ready to face any challenge that may arise, ensuring the
+                    protection of their kin and the preservation of righteousness.</p>
+
+                <h2>Class information</h2>
+                <p>
+                    Warriors in Warcraft are versatile combatants, excelling in both offense and defense on the
+                    battlefield.
+                    Clad in heavy plate armor and wielding a variety of weapons, from swords and axes to maces and
+                    polearms,
+                    Warriors are masters of martial prowess. They can adopt different specializations to suit their
+                    preferred combat style: Arms Warriors focus on dealing devastating blows with two-handed weapons,
+                    Fury
+                    Warriors unleash a flurry of attacks with dual-wielding weapons, and Protection Warriors specialize
+                    in
+                    tanking, drawing enemy attention and mitigating damage to protect their allies. With a wide range of
+                    abilities, including powerful strikes, defensive maneuvers, and crowd control techniques, Warriors
+                    are
+                    indispensable assets in any battle, capable of turning the tide of war with their unmatched skill
+                    and
+                    resilience.</p>
+            </section>
+
+            <figure>
+                <img id="img1" src="sprites/warrior1.png" alt="Orc Warrior">
+                <img id="img2" src="sprites/warrior2.png" alt="Dwarf Warrior">
+            </figure>
+
+            <div class="specs">
+                <section>
+                    <h2>Arms</h2>
+                    <p>A battle-hardened master of weapons, using mobility and overpowering attacks to strike their
+                        opponents down. Preferred Weapon: Two-Handed Axe, Mace, Sword</p>
+                    <h2>Fury</h2>
+                    <p>A furious dual-wielding berserker unleashing a flurry of attacks to carve their opponents to
+                        pieces. Preferred Weapons: Dual Two-Handed Axes, Maces, Swords</p>
+                    <h2>Protection</h2>
+                    <p>A stalwart protector who uses a shield to safeguard themselves and their allies. Preferred
+                        Weapon: Axe, Mace, Sword, and Shield</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="abilities-container">
+            <div class="ability">
+                <div class="ability-header">
+                    <img src="sprites/berserkerstance.png" alt="Icon">
+                    <h3> Berserzer Stance</h3>
+                </div>
+                <div class="ability-desc">
+                    <p> An aggressive stance. Critical hit chance is increased by 3% and all damage taken is increased
+                        by 10%. </p>
+                </div>
+            </div>
+
+            <div class="ability">
+                <div class="ability-header">
+                    <img src="sprites/execute.png" alt="Icon">
+                    <h3> Execute </h3>
+                </div>
+                <div class="ability-desc">
+                    <p> Attempts to finish off a foe, causing up to [2.0 * (107.415% of Attack power)] Physical damage
+                        based on Rage spent. Only usable on enemies that have less than 20% health. </p>
+                </div>
+            </div>
+
+            <div class="ability">
+                <div class="ability-header">
+                    <img src="sprites/battleshout.png" alt="Icon">
+                    <h3> Battle Shout</h3>
+                </div>
+                <div class="ability-desc">
+                    <p>
+                        Increases the attack power of all raid and party members within 100 yards by 5% for 1 hour..
+                    </p>
+                </div>
+            </div>
+
+            <div class="ability">
+                <div class="ability-header">
+                    <img src="sprites/rend.png" alt="Icon">
+                    <h3>Rend</h3>
+                </div>
+                <div class="ability-desc">
+                    <p> Wounds the target, causing (73.83% of Attack power) Physical damage instantly and an additional
+                        (112.875% of Attack power) Bleed damage over 15 sec. </p>
+                </div>
+            </div>
+
+            <div class="ability">
+                <div class="ability-header">
+                    <img src="sprites/sunderarmor.png" alt="Icon">
+                    <h3>Sunder Armor</h3>
+                </div>
+                <div class="ability-desc">
+                    <p> Sunders the target's armor, reducing it by 450 per Sunder Armor and causes a high amount of
+                        threat. Can be applied up to 5 times. Lasts 30 sec. </p>
+                </div>
+            </div>
+
+            <div class="ability">
+                <div class="ability-header">
+                    <img src="sprites/berserkerrage.png" alt="Icon">
+                    <h3> Berserzer Rage</h3>
+                </div>
+                <div class="ability-desc">
+                    <p> The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and
+                        generating extra rage when taking damage. Lasts 10 sec. </p>
+                </div>
+            </div>
+
+            <div class="ability">
+                <div class="ability-header">
+                    <img src="sprites/charge.png" alt="Icon">
+                    <h3>Charge</h3>
+                </div>
+                <div class="ability-desc">
+                    <p> Charge to an enemy, dealing (21% of Attack power) Physical damage, rooting it for 1 sec </p>
+                </div>
+            </div>
+
+            <div class="ability">
+                <div class="ability-header">
+                    <img src="sprites/shieldblock.png" alt="Icon">
+                    <h3> Shield Block</h3>
+                </div>
+                <div class="ability-desc">
+                    <p> Raise your shield, blocking all melee attacks against you for 6 sec. </p>
+                </div>
+            </div>
+
+        </div>>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 World of Warcraft. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
